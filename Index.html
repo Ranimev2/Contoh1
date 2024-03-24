@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anime Viewer</title>
+    <title>Takamiya App</title>
     <!-- Tambahkan tautan ke manifest dan ikon aplikasi -->
     <link rel="manifest" href="/manifest.json">
     <link rel="icon" href="/icon.png">
@@ -25,14 +25,8 @@
                     .catch(error => {
                         console.log('Service Worker registration failed: ', error);
                     });
-const animePlayer = document.getElementById('anime-player');
-
-function playAnime(anime) {
-    animePlayer.innerHTML = `<video controls autoplay><source src="${anime.videoUrl}" type="video/mp4"></video>`;
-}
-    
+            });
         }
     </script>
 </body>
 </html>
-  
